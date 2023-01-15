@@ -3,7 +3,7 @@
  * @param len 만들려는 문자열 길이
  * @return r
  */
-function randomString(len: number) {
+function randomString(len: number): string {
     let result = '';
     const characters =
       'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
@@ -13,4 +13,3 @@ function randomString(len: number) {
     }
     return result;
   }
-
