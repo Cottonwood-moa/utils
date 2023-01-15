@@ -1,3 +1,8 @@
+/**
+ * @param entireObj (string) 대상 이메일
+ * @return (boolean)이메일 유효성 통과 여부 
+ * @description 파라미터로 전달 받은 이메일의 유효성을 검사.
+*/
 function checkEmailFormat(email) {
     if (email === null) {
       return false;
