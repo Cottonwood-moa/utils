@@ -1,14 +1,14 @@
 /**
- * @param total(number) '-' 으로 구분되는 전체 묶음 갯수 
+ * @param total(number) '-' 으로 구분되는 전체 묶음 갯수
  * @param each(number) 묶음 길이
  * @return (string) ex)uniqueKey(8, 4): zc7z-H8U1-c0d4-xV94-kt54-4xhh-9UU4-CbuN
- * @description 
+ * @description
  * a-z : 97 ~ 122(0x61 ~ 0x7A)
  * A-Z : 65 ~ 90(0x41 ~ 0x5A)
  * 0-9 : 48 ~ 57(0x30 ~ 0x39)
-*/
+ */
 function uniqueKey(total: number, each: number): string {
-  let uniqueString = '';
+  let uniqueString = "";
   let randomStringType = Math.floor(Math.random() * 2);
   if (randomStringType === 0) {
     uniqueString += String.fromCharCode(Math.random() * 26 + 65);
@@ -34,11 +34,11 @@ function uniqueKey(total: number, each: number): string {
         break;
       }
     }
-    if ((i % each === each - 1) && (i !== each * total - 1)) {
-      uniqueString += '-';
+    if (i % each === each - 1 && i !== each * total - 1) {
+      uniqueString += "-";
     }
   }
   return uniqueString;
-  }
+}
 
-  console.log(uniqueKey(8, 4))
+console.log(uniqueKey(8, 4));
