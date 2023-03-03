@@ -26,7 +26,7 @@ function checkEmailFormat(email) {
     return emailRegex.test(email);
   } 
   
-  TESTESTESTESTSETE
+  TESTESTESTESTSETETESTESTESTESTES
   */
 /* 
 test
