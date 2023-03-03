@@ -16,7 +16,7 @@ function checkEmailFormat(email) {
 
 // typescript
 /*   function checkEmailFormat(email: string) {
-    if (email === null) {
+    if (email === null) {AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
       return false;
     }
     if (email || !email) {
